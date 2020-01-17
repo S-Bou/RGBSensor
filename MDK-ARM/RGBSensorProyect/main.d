@@ -26,6 +26,8 @@ rgbsensorproyect\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_corte
 rgbsensorproyect\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 rgbsensorproyect\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 rgbsensorproyect\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+rgbsensorproyect\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+rgbsensorproyect\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 rgbsensorproyect\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 rgbsensorproyect\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 rgbsensorproyect\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
@@ -33,3 +35,5 @@ rgbsensorproyect\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_e
 rgbsensorproyect\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 rgbsensorproyect\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 rgbsensorproyect\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+rgbsensorproyect\main.o: ..\..\Libraries\servos.h
+rgbsensorproyect\main.o: ..\..\Libraries\tcs34725.h

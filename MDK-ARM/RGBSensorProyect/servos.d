@@ -1,5 +1,5 @@
-rgbsensorproyect\servos.o: servos.c
-rgbsensorproyect\servos.o: servos.h
+rgbsensorproyect\servos.o: ..\..\Libraries\servos.c
+rgbsensorproyect\servos.o: ..\..\Libraries\servos.h
 rgbsensorproyect\servos.o: ../Inc/main.h
 rgbsensorproyect\servos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 rgbsensorproyect\servos.o: ../Inc/stm32f4xx_hal_conf.h
@@ -27,6 +27,8 @@ rgbsensorproyect\servos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cor
 rgbsensorproyect\servos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 rgbsensorproyect\servos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 rgbsensorproyect\servos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+rgbsensorproyect\servos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+rgbsensorproyect\servos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 rgbsensorproyect\servos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 rgbsensorproyect\servos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 rgbsensorproyect\servos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h

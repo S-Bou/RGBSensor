@@ -60,9 +60,6 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define ThresholdColors_Pin GPIO_PIN_2
-#define ThresholdColors_GPIO_Port GPIOB
-#define ThresholdColors_EXTI_IRQn EXTI2_IRQn
 #define GreenLed_Pin GPIO_PIN_12
 #define GreenLed_GPIO_Port GPIOD
 #define OrangeLed_Pin GPIO_PIN_13
@@ -71,16 +68,12 @@ void Error_Handler(void);
 #define RedLed_GPIO_Port GPIOD
 #define BlueLed_Pin GPIO_PIN_15
 #define BlueLed_GPIO_Port GPIOD
-#define S3_Pin GPIO_PIN_8
-#define S3_GPIO_Port GPIOA
-#define S2_Pin GPIO_PIN_9
-#define S2_GPIO_Port GPIOA
-#define Button_25_Pin GPIO_PIN_0
-#define Button_25_GPIO_Port GPIOE
-#define Button_25_EXTI_IRQn EXTI0_IRQn
-#define Button_75_Pin GPIO_PIN_1
-#define Button_75_GPIO_Port GPIOE
-#define Button_75_EXTI_IRQn EXTI1_IRQn
+#define StoreColors_Pin GPIO_PIN_8
+#define StoreColors_GPIO_Port GPIOB
+#define LedSensor_Pin GPIO_PIN_9
+#define LedSensor_GPIO_Port GPIOB
+#define ButtonCicle_Pin GPIO_PIN_0
+#define ButtonCicle_GPIO_Port GPIOE
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

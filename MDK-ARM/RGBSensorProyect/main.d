@@ -37,4 +37,10 @@ rgbsensorproyect\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 rgbsensorproyect\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 rgbsensorproyect\main.o: ..\..\Libraries\tcs34725.h
 rgbsensorproyect\main.o: ..\..\Libraries\writeFlash.h
+rgbsensorproyect\main.o: ..\..\Libraries\Libraries for OLED 128x64\ssd1306.h
+rgbsensorproyect\main.o: ..\..\Libraries\Libraries for OLED 128x64\fonts.h
+rgbsensorproyect\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+rgbsensorproyect\main.o: ..\..\Libraries\Libraries for OLED 128x64\test.h
+rgbsensorproyect\main.o: ..\..\Libraries\servosandbuttons.h
+rgbsensorproyect\main.o: ..\..\Libraries\sendwifi.h
 rgbsensorproyect\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

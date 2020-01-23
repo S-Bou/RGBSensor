@@ -68,12 +68,12 @@ void Error_Handler(void);
 #define RedLed_GPIO_Port GPIOD
 #define BlueLed_Pin GPIO_PIN_15
 #define BlueLed_GPIO_Port GPIOD
-#define StoreColors_Pin GPIO_PIN_8
-#define StoreColors_GPIO_Port GPIOB
 #define LedSensor_Pin GPIO_PIN_9
 #define LedSensor_GPIO_Port GPIOB
-#define ButtonCicle_Pin GPIO_PIN_0
-#define ButtonCicle_GPIO_Port GPIOE
+#define ButtonOne_Pin GPIO_PIN_0
+#define ButtonOne_GPIO_Port GPIOE
+#define ButtonTwo_Pin GPIO_PIN_1
+#define ButtonTwo_GPIO_Port GPIOE
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

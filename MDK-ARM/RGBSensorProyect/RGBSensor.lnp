@@ -1,10 +1,15 @@
---cpu=Cortex-M4.fp
+--cpu=Cortex-M4.fp.sp
 "rgbsensorproyect\startup_stm32f407xx.o"
 "rgbsensorproyect\main.o"
 "rgbsensorproyect\stm32f4xx_it.o"
 "rgbsensorproyect\stm32f4xx_hal_msp.o"
 "rgbsensorproyect\tcs34725.o"
 "rgbsensorproyect\writeflash.o"
+"rgbsensorproyect\servosandbuttons.o"
+"rgbsensorproyect\fonts.o"
+"rgbsensorproyect\ssd1306.o"
+"rgbsensorproyect\test.o"
+"rgbsensorproyect\sendwifi.o"
 "rgbsensorproyect\stm32f4xx_hal_i2c.o"
 "rgbsensorproyect\stm32f4xx_hal_i2c_ex.o"
 "rgbsensorproyect\stm32f4xx_hal_rcc.o"
@@ -23,7 +28,6 @@
 "rgbsensorproyect\stm32f4xx_hal_tim.o"
 "rgbsensorproyect\stm32f4xx_hal_tim_ex.o"
 "rgbsensorproyect\stm32f4xx_hal_uart.o"
-"rgbsensorproyect\servos_buttons.o"
 "rgbsensorproyect\system_stm32f4xx.o"
 --library_type=microlib --strict --scatter "RGBSensorProyect\RGBSensor.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

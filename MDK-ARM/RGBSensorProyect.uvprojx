@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;                             ../Drivers/STM32F4xx_HAL_Driver/Inc;                             ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;                             ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;                             ../Drivers/CMSIS/Include;                             ..\..\Libraries</IncludePath>
+              <IncludePath>../Inc;      ../Drivers/STM32F4xx_HAL_Driver/Inc;      ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;      ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;      ../Drivers/CMSIS/Include;      ..\..\Libraries;      ..\..\Libraries\Libraries for OLED 128x64</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -421,6 +421,31 @@
               <FileName>writeFlash.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Libraries\writeFlash.c</FilePath>
+            </File>
+            <File>
+              <FileName>servosandbuttons.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries\servosandbuttons.c</FilePath>
+            </File>
+            <File>
+              <FileName>fonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries\Libraries for OLED 128x64\fonts.c</FilePath>
+            </File>
+            <File>
+              <FileName>ssd1306.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries\Libraries for OLED 128x64\ssd1306.c</FilePath>
+            </File>
+            <File>
+              <FileName>test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries\Libraries for OLED 128x64\test.c</FilePath>
+            </File>
+            <File>
+              <FileName>sendwifi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries\sendwifi.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_hal_i2c.c</FileName>
@@ -511,11 +536,6 @@
               <FileName>stm32f4xx_hal_uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c</FilePath>
-            </File>
-            <File>
-              <FileName>servos_buttons.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\servos_buttons.c</FilePath>
             </File>
           </Files>
         </Group>

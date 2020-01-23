@@ -866,14 +866,14 @@ ARM Macro Assembler    Page 14
   436 0000001C                 END
               00000000 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
-erwork --depend=rgbsensorproyect\startup_stm32f407xx.d -orgbsensorproyect\start
-up_stm32f407xx.o -I.\RTE\_RGBSensorProyect -IC:\Users\bouyo\AppData\Local\Arm\P
-acks\ARM\CMSIS\5.5.1\CMSIS\Core\Include -IC:\Users\bouyo\AppData\Local\Arm\Pack
-s\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --predefi
-ne="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSI
-ON SETA 528" --predefine="_RTE_ SETA 1" --predefine="STM32F407xx SETA 1" --list
-=startup_stm32f407xx.lst startup_stm32f407xx.s
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
+interwork --depend=rgbsensorproyect\startup_stm32f407xx.d -orgbsensorproyect\st
+artup_stm32f407xx.o -I.\RTE\_RGBSensorProyect -IC:\Users\bouyo\AppData\Local\Ar
+m\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include -IC:\Users\bouyo\AppData\Local\Arm\P
+acks\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --pred
+efine="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VE
+RSION SETA 529" --predefine="_RTE_ SETA 1" --predefine="STM32F407xx SETA 1" --l
+ist=startup_stm32f407xx.lst startup_stm32f407xx.s
 
 
 

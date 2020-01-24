@@ -58,8 +58,8 @@ Section Cross References
     main.o(i.main) refers to ssd1306.o(i.SSD1306_UpdateScreen) for SSD1306_UpdateScreen
     main.o(i.main) refers to stm32f4xx_hal_uart.o(i.HAL_UART_Receive_DMA) for HAL_UART_Receive_DMA
     main.o(i.main) refers to tcs34725.o(i.resetvar) for resetvar
-    main.o(i.main) refers to servosandbuttons.o(i.ButtonOnePressed) for ButtonOnePressed
-    main.o(i.main) refers to servosandbuttons.o(i.ButtonTwoPressed) for ButtonTwoPressed
+    main.o(i.main) refers to servosandbuttons.o(i.ButtonAceptPressed) for ButtonAceptPressed
+    main.o(i.main) refers to servosandbuttons.o(i.ButtonMenuPressed) for ButtonMenuPressed
     main.o(i.main) refers to main.o(.bss) for .bss
     main.o(i.main) refers to tcs34725.o(.bss) for ColorsThreshold
     main.o(i.main) refers to fonts.o(.data) for Font_11x18
@@ -156,38 +156,38 @@ Section Cross References
     writeflash.o(i.MY_FLASH_WriteN) refers to stm32f4xx_hal_flash.o(i.HAL_FLASH_Lock) for HAL_FLASH_Lock
     writeflash.o(i.MY_FLASH_WriteN) refers to stm32f4xx_hal_flash.o(i.HAL_FLASH_Program) for HAL_FLASH_Program
     writeflash.o(i.MY_FLASH_WriteN) refers to writeflash.o(.data) for .data
-    servosandbuttons.o(i.ButtonOnePressed) refers to stm32f4xx_hal_gpio.o(i.HAL_GPIO_ReadPin) for HAL_GPIO_ReadPin
-    servosandbuttons.o(i.ButtonOnePressed) refers to stm32f4xx_hal.o(i.HAL_Delay) for HAL_Delay
-    servosandbuttons.o(i.ButtonOnePressed) refers to tcs34725.o(i.CalibrateColour) for CalibrateColour
-    servosandbuttons.o(i.ButtonOnePressed) refers to servosandbuttons.o(i.ButtonTwoAction) for ButtonTwoAction
-    servosandbuttons.o(i.ButtonOnePressed) refers to servosandbuttons.o(.data) for .data
-    servosandbuttons.o(i.ButtonTwoAction) refers to ssd1306.o(i.SSD1306_Clear) for SSD1306_Clear
-    servosandbuttons.o(i.ButtonTwoAction) refers to ssd1306.o(i.SSD1306_GotoXY) for SSD1306_GotoXY
-    servosandbuttons.o(i.ButtonTwoAction) refers to printf3.o(i.__0sprintf$3) for __2sprintf
-    servosandbuttons.o(i.ButtonTwoAction) refers to ssd1306.o(i.SSD1306_Puts) for SSD1306_Puts
-    servosandbuttons.o(i.ButtonTwoAction) refers to ssd1306.o(i.SSD1306_UpdateScreen) for SSD1306_UpdateScreen
-    servosandbuttons.o(i.ButtonTwoAction) refers to tcs34725.o(i.CicleColor) for CicleColor
-    servosandbuttons.o(i.ButtonTwoAction) refers to sendwifi.o(i.InitESP) for InitESP
-    servosandbuttons.o(i.ButtonTwoAction) refers to stm32f4xx_hal_gpio.o(i.HAL_GPIO_TogglePin) for HAL_GPIO_TogglePin
-    servosandbuttons.o(i.ButtonTwoAction) refers to stm32f4xx_hal.o(i.HAL_Delay) for HAL_Delay
-    servosandbuttons.o(i.ButtonTwoAction) refers to stm32f4xx_hal_gpio.o(i.HAL_GPIO_ReadPin) for HAL_GPIO_ReadPin
-    servosandbuttons.o(i.ButtonTwoAction) refers to sendwifi.o(i.UpPage) for UpPage
-    servosandbuttons.o(i.ButtonTwoAction) refers to tcs34725.o(i.CalibrateColour) for CalibrateColour
-    servosandbuttons.o(i.ButtonTwoAction) refers to servosandbuttons.o(.data) for .data
-    servosandbuttons.o(i.ButtonTwoAction) refers to tcs34725.o(.data) for rojo
-    servosandbuttons.o(i.ButtonTwoAction) refers to fonts.o(.data) for Font_7x10
-    servosandbuttons.o(i.ButtonTwoMenu) refers to ssd1306.o(i.SSD1306_Clear) for SSD1306_Clear
-    servosandbuttons.o(i.ButtonTwoMenu) refers to ssd1306.o(i.SSD1306_GotoXY) for SSD1306_GotoXY
-    servosandbuttons.o(i.ButtonTwoMenu) refers to printf3.o(i.__0sprintf$3) for __2sprintf
-    servosandbuttons.o(i.ButtonTwoMenu) refers to ssd1306.o(i.SSD1306_Puts) for SSD1306_Puts
-    servosandbuttons.o(i.ButtonTwoMenu) refers to ssd1306.o(i.SSD1306_DrawFilledCircle) for SSD1306_DrawFilledCircle
-    servosandbuttons.o(i.ButtonTwoMenu) refers to ssd1306.o(i.SSD1306_UpdateScreen) for SSD1306_UpdateScreen
-    servosandbuttons.o(i.ButtonTwoMenu) refers to servosandbuttons.o(.data) for .data
-    servosandbuttons.o(i.ButtonTwoMenu) refers to fonts.o(.data) for Font_7x10
-    servosandbuttons.o(i.ButtonTwoPressed) refers to stm32f4xx_hal_gpio.o(i.HAL_GPIO_ReadPin) for HAL_GPIO_ReadPin
-    servosandbuttons.o(i.ButtonTwoPressed) refers to stm32f4xx_hal.o(i.HAL_Delay) for HAL_Delay
-    servosandbuttons.o(i.ButtonTwoPressed) refers to servosandbuttons.o(i.ButtonTwoMenu) for ButtonTwoMenu
-    servosandbuttons.o(i.ButtonTwoPressed) refers to servosandbuttons.o(.data) for .data
+    servosandbuttons.o(i.ButtonAceptPressed) refers to stm32f4xx_hal_gpio.o(i.HAL_GPIO_ReadPin) for HAL_GPIO_ReadPin
+    servosandbuttons.o(i.ButtonAceptPressed) refers to stm32f4xx_hal.o(i.HAL_Delay) for HAL_Delay
+    servosandbuttons.o(i.ButtonAceptPressed) refers to tcs34725.o(i.CalibrateColour) for CalibrateColour
+    servosandbuttons.o(i.ButtonAceptPressed) refers to servosandbuttons.o(i.ButtonMenuAction) for ButtonMenuAction
+    servosandbuttons.o(i.ButtonAceptPressed) refers to servosandbuttons.o(.data) for .data
+    servosandbuttons.o(i.ButtonMenu) refers to ssd1306.o(i.SSD1306_Clear) for SSD1306_Clear
+    servosandbuttons.o(i.ButtonMenu) refers to ssd1306.o(i.SSD1306_GotoXY) for SSD1306_GotoXY
+    servosandbuttons.o(i.ButtonMenu) refers to printf3.o(i.__0sprintf$3) for __2sprintf
+    servosandbuttons.o(i.ButtonMenu) refers to ssd1306.o(i.SSD1306_Puts) for SSD1306_Puts
+    servosandbuttons.o(i.ButtonMenu) refers to ssd1306.o(i.SSD1306_DrawFilledCircle) for SSD1306_DrawFilledCircle
+    servosandbuttons.o(i.ButtonMenu) refers to ssd1306.o(i.SSD1306_UpdateScreen) for SSD1306_UpdateScreen
+    servosandbuttons.o(i.ButtonMenu) refers to servosandbuttons.o(.data) for .data
+    servosandbuttons.o(i.ButtonMenu) refers to fonts.o(.data) for Font_7x10
+    servosandbuttons.o(i.ButtonMenuAction) refers to ssd1306.o(i.SSD1306_Clear) for SSD1306_Clear
+    servosandbuttons.o(i.ButtonMenuAction) refers to ssd1306.o(i.SSD1306_GotoXY) for SSD1306_GotoXY
+    servosandbuttons.o(i.ButtonMenuAction) refers to printf3.o(i.__0sprintf$3) for __2sprintf
+    servosandbuttons.o(i.ButtonMenuAction) refers to ssd1306.o(i.SSD1306_Puts) for SSD1306_Puts
+    servosandbuttons.o(i.ButtonMenuAction) refers to ssd1306.o(i.SSD1306_UpdateScreen) for SSD1306_UpdateScreen
+    servosandbuttons.o(i.ButtonMenuAction) refers to tcs34725.o(i.CicleColor) for CicleColor
+    servosandbuttons.o(i.ButtonMenuAction) refers to sendwifi.o(i.InitESP) for InitESP
+    servosandbuttons.o(i.ButtonMenuAction) refers to stm32f4xx_hal_gpio.o(i.HAL_GPIO_TogglePin) for HAL_GPIO_TogglePin
+    servosandbuttons.o(i.ButtonMenuAction) refers to stm32f4xx_hal.o(i.HAL_Delay) for HAL_Delay
+    servosandbuttons.o(i.ButtonMenuAction) refers to stm32f4xx_hal_gpio.o(i.HAL_GPIO_ReadPin) for HAL_GPIO_ReadPin
+    servosandbuttons.o(i.ButtonMenuAction) refers to sendwifi.o(i.UpPage) for UpPage
+    servosandbuttons.o(i.ButtonMenuAction) refers to tcs34725.o(i.CalibrateColour) for CalibrateColour
+    servosandbuttons.o(i.ButtonMenuAction) refers to servosandbuttons.o(.data) for .data
+    servosandbuttons.o(i.ButtonMenuAction) refers to tcs34725.o(.data) for rojo
+    servosandbuttons.o(i.ButtonMenuAction) refers to fonts.o(.data) for Font_7x10
+    servosandbuttons.o(i.ButtonMenuPressed) refers to stm32f4xx_hal_gpio.o(i.HAL_GPIO_ReadPin) for HAL_GPIO_ReadPin
+    servosandbuttons.o(i.ButtonMenuPressed) refers to stm32f4xx_hal.o(i.HAL_Delay) for HAL_Delay
+    servosandbuttons.o(i.ButtonMenuPressed) refers to servosandbuttons.o(i.ButtonMenu) for ButtonMenu
+    servosandbuttons.o(i.ButtonMenuPressed) refers to servosandbuttons.o(.data) for .data
     servosandbuttons.o(i.ContinuousServo) refers to stm32f4xx_hal.o(i.HAL_Delay) for HAL_Delay
     servosandbuttons.o(i.ContinuousServo) refers to main.o(.bss) for htim3
     servosandbuttons.o(i.PositionServoRamp) refers to main.o(.bss) for htim3
@@ -1647,10 +1647,10 @@ Image Symbol Table
     .text                                    0x0800029e   Section        0  llushr.o(.text)
     .text                                    0x080002c0   Section       36  init.o(.text)
     i.BusFault_Handler                       0x080002e4   Section        0  stm32f4xx_it.o(i.BusFault_Handler)
-    i.ButtonOnePressed                       0x080002e8   Section        0  servosandbuttons.o(i.ButtonOnePressed)
-    i.ButtonTwoAction                        0x0800034c   Section        0  servosandbuttons.o(i.ButtonTwoAction)
-    i.ButtonTwoMenu                          0x0800059c   Section        0  servosandbuttons.o(i.ButtonTwoMenu)
-    i.ButtonTwoPressed                       0x08000860   Section        0  servosandbuttons.o(i.ButtonTwoPressed)
+    i.ButtonAceptPressed                     0x080002e8   Section        0  servosandbuttons.o(i.ButtonAceptPressed)
+    i.ButtonMenu                             0x0800034c   Section        0  servosandbuttons.o(i.ButtonMenu)
+    i.ButtonMenuAction                       0x08000610   Section        0  servosandbuttons.o(i.ButtonMenuAction)
+    i.ButtonMenuPressed                      0x08000860   Section        0  servosandbuttons.o(i.ButtonMenuPressed)
     i.CalibrateColour                        0x080008bc   Section        0  tcs34725.o(i.CalibrateColour)
     i.CicleColor                             0x08000b94   Section        0  tcs34725.o(i.CicleColor)
     i.DMA1_Stream1_IRQHandler                0x08000c00   Section        0  stm32f4xx_it.o(i.DMA1_Stream1_IRQHandler)
@@ -2020,10 +2020,10 @@ Image Symbol Table
     __scatterload                            0x080002c1   Thumb Code    28  init.o(.text)
     __scatterload_rt2                        0x080002c1   Thumb Code     0  init.o(.text)
     BusFault_Handler                         0x080002e5   Thumb Code     2  stm32f4xx_it.o(i.BusFault_Handler)
-    ButtonOnePressed                         0x080002e9   Thumb Code    92  servosandbuttons.o(i.ButtonOnePressed)
-    ButtonTwoAction                          0x0800034d   Thumb Code   498  servosandbuttons.o(i.ButtonTwoAction)
-    ButtonTwoMenu                            0x0800059d   Thumb Code   628  servosandbuttons.o(i.ButtonTwoMenu)
-    ButtonTwoPressed                         0x08000861   Thumb Code    82  servosandbuttons.o(i.ButtonTwoPressed)
+    ButtonAceptPressed                       0x080002e9   Thumb Code    92  servosandbuttons.o(i.ButtonAceptPressed)
+    ButtonMenu                               0x0800034d   Thumb Code   628  servosandbuttons.o(i.ButtonMenu)
+    ButtonMenuAction                         0x08000611   Thumb Code   498  servosandbuttons.o(i.ButtonMenuAction)
+    ButtonMenuPressed                        0x08000861   Thumb Code    82  servosandbuttons.o(i.ButtonMenuPressed)
     CalibrateColour                          0x080008bd   Thumb Code   476  tcs34725.o(i.CalibrateColour)
     CicleColor                               0x08000b95   Thumb Code   102  tcs34725.o(i.CicleColor)
     DMA1_Stream1_IRQHandler                  0x08000c01   Thumb Code     6  stm32f4xx_it.o(i.DMA1_Stream1_IRQHandler)
@@ -2154,7 +2154,7 @@ Image Symbol Table
     tempStore                                0x20000020   Data           1  servosandbuttons.o(.data)
     tempBall                                 0x20000021   Data           1  servosandbuttons.o(.data)
     buttoncalibrate                          0x20000022   Data           1  servosandbuttons.o(.data)
-    buttontwopulsed                          0x20000023   Data           1  servosandbuttons.o(.data)
+    buttonMenuCount                          0x20000023   Data           1  servosandbuttons.o(.data)
     Font_7x10                                0x20000024   Data           8  fonts.o(.data)
     Font_11x18                               0x2000002c   Data           8  fonts.o(.data)
     chanel                                   0x2000003a   Data           1  sendwifi.o(.data)
@@ -2209,10 +2209,10 @@ Memory Map of the image
     0x080002c0   0x080002c0   0x00000024   Code   RO         4057    .text               mc_w.l(init.o)
     0x080002e4   0x080002e4   0x00000002   Code   RO          206    i.BusFault_Handler  stm32f4xx_it.o
     0x080002e6   0x080002e6   0x00000002   PAD
-    0x080002e8   0x080002e8   0x00000064   Code   RO          493    i.ButtonOnePressed  servosandbuttons.o
-    0x0800034c   0x0800034c   0x00000250   Code   RO          494    i.ButtonTwoAction   servosandbuttons.o
-    0x0800059c   0x0800059c   0x000002c4   Code   RO          495    i.ButtonTwoMenu     servosandbuttons.o
-    0x08000860   0x08000860   0x0000005c   Code   RO          496    i.ButtonTwoPressed  servosandbuttons.o
+    0x080002e8   0x080002e8   0x00000064   Code   RO          493    i.ButtonAceptPressed  servosandbuttons.o
+    0x0800034c   0x0800034c   0x000002c4   Code   RO          494    i.ButtonMenu        servosandbuttons.o
+    0x08000610   0x08000610   0x00000250   Code   RO          495    i.ButtonMenuAction  servosandbuttons.o
+    0x08000860   0x08000860   0x0000005c   Code   RO          496    i.ButtonMenuPressed  servosandbuttons.o
     0x080008bc   0x080008bc   0x000002d8   Code   RO          377    i.CalibrateColour   tcs34725.o
     0x08000b94   0x08000b94   0x0000006c   Code   RO          378    i.CicleColor        tcs34725.o
     0x08000c00   0x08000c00   0x0000000c   Code   RO          207    i.DMA1_Stream1_IRQHandler  stm32f4xx_it.o
@@ -2415,7 +2415,7 @@ Image component sizes
          0          0       5320         16          0       1403   fonts.o
        926        130          0          0        520     702008   main.o
        604        154        476          1        400       3297   sendwifi.o
-      1516        200          0          4          0       4944   servosandbuttons.o
+      1516        200          0          4          0       4953   servosandbuttons.o
       1374         54          0          6       1024      11348   ssd1306.o
         36          8        392          0       1024        836   startup_stm32f407xx.o
        180         28          0         12          0       9393   stm32f4xx_hal.o
@@ -2437,7 +2437,7 @@ Image component sizes
        240         16          0          8          0       2969   writeflash.o
 
     ----------------------------------------------------------------------
-     16964       1702       6336         76       3020     851963   Object Totals
+     16964       1702       6336         76       3020     851972   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         28          0          0          1          4          0   (incl. Padding)
 
@@ -2483,8 +2483,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     17800       1728       6336         76       3020     839259   Grand Totals
-     17800       1728       6336         76       3020     839259   ELF Image Totals
+     17800       1728       6336         76       3020     839268   Grand Totals
+     17800       1728       6336         76       3020     839268   ELF Image Totals
      17800       1728       6336         76          0          0   ROM Totals
 
 ==============================================================================

@@ -162,8 +162,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		ButtonOnePressed();
-		ButtonTwoPressed();
+		ButtonAceptPressed();
+		ButtonMenuPressed();
   }
   /* USER CODE END 3 */
 }
@@ -494,8 +494,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LedSensor_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : ButtonOne_Pin ButtonTwo_Pin */
-  GPIO_InitStruct.Pin = ButtonOne_Pin|ButtonTwo_Pin;
+  /*Configure GPIO pins : ButtonAcept_Pin ButtonMenu_Pin */
+  GPIO_InitStruct.Pin = ButtonAcept_Pin|ButtonMenu_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);

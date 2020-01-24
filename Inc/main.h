@@ -70,10 +70,10 @@ void Error_Handler(void);
 #define BlueLed_GPIO_Port GPIOD
 #define LedSensor_Pin GPIO_PIN_9
 #define LedSensor_GPIO_Port GPIOB
-#define ButtonOne_Pin GPIO_PIN_0
-#define ButtonOne_GPIO_Port GPIOE
-#define ButtonTwo_Pin GPIO_PIN_1
-#define ButtonTwo_GPIO_Port GPIOE
+#define ButtonAcept_Pin GPIO_PIN_0
+#define ButtonAcept_GPIO_Port GPIOE
+#define ButtonMenu_Pin GPIO_PIN_1
+#define ButtonMenu_GPIO_Port GPIOE
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

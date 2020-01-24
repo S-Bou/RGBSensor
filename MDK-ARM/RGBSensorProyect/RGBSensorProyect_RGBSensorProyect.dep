@@ -1,7 +1,7 @@
 Dependencies for Project 'RGBSensorProyect', Target 'RGBSensorProyect': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
 F (startup_stm32f407xx.s)(0x5E29E208)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_RGBSensorProyect-IC:\Users\bouyo\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\bouyo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o rgbsensorproyect\startup_stm32f407xx.o --depend rgbsensorproyect\startup_stm32f407xx.d)
-F (../Src/main.c)(0x5E2A0F03)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\..\Libraries -I "..\..\Libraries\Libraries for OLED 128x64"-I.\RTE\_RGBSensorProyect-IC:\Users\bouyo\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\bouyo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o rgbsensorproyect\main.o --omf_browse rgbsensorproyect\main.crf --depend rgbsensorproyect\main.d)
+F (../Src/main.c)(0x5E2A305C)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\..\Libraries -I "..\..\Libraries\Libraries for OLED 128x64"-I.\RTE\_RGBSensorProyect-IC:\Users\bouyo\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\bouyo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o rgbsensorproyect\main.o --omf_browse rgbsensorproyect\main.crf --depend rgbsensorproyect\main.d)
 I (../Inc/main.h)(0x5E29E206)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5DFC8DEB)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5E29E206)
@@ -37,7 +37,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5DFC8DEB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5DFC8DEB)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
-I (..\..\Libraries\tcs34725.h)(0x5E285B89)
+I (..\..\Libraries\tcs34725.h)(0x5E2A305C)
 I (..\..\Libraries\writeFlash.h)(0x5E23038D)
 I (..\..\Libraries\Libraries for OLED 128x64\ssd1306.h)(0x5E280C3E)
 I (..\..\Libraries\Libraries for OLED 128x64\fonts.h)(0x5E2740C2)
@@ -81,7 +81,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5DFC8DEB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5DFC8DEB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5DFC8DEB)
 I (../Inc/stm32f4xx_it.h)(0x5E29E205)
-I (..\..\Libraries\tcs34725.h)(0x5E285B89)
+I (..\..\Libraries\tcs34725.h)(0x5E2A305C)
 I (..\..\Libraries\writeFlash.h)(0x5E23038D)
 I (..\..\Libraries\Libraries for OLED 128x64\ssd1306.h)(0x5E280C3E)
 I (..\..\Libraries\Libraries for OLED 128x64\fonts.h)(0x5E2740C2)
@@ -126,8 +126,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5DFC8DEB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5DFC8DEB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5DFC8DEB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5DFC8DEB)
-F (..\..\Libraries\tcs34725.c)(0x5E2A120B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\..\Libraries -I "..\..\Libraries\Libraries for OLED 128x64"-I.\RTE\_RGBSensorProyect-IC:\Users\bouyo\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\bouyo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o rgbsensorproyect\tcs34725.o --omf_browse rgbsensorproyect\tcs34725.crf --depend rgbsensorproyect\tcs34725.d)
-I (..\..\Libraries\tcs34725.h)(0x5E285B89)
+F (..\..\Libraries\tcs34725.c)(0x5E2A305C)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\..\Libraries -I "..\..\Libraries\Libraries for OLED 128x64"-I.\RTE\_RGBSensorProyect-IC:\Users\bouyo\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\bouyo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o rgbsensorproyect\tcs34725.o --omf_browse rgbsensorproyect\tcs34725.crf --depend rgbsensorproyect\tcs34725.d)
+I (..\..\Libraries\tcs34725.h)(0x5E2A305C)
 I (../Inc/main.h)(0x5E29E206)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5DFC8DEB)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5E29E206)
@@ -205,7 +205,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5DFC8DEB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5DFC8DEB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5DFC8DEB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5DFC8DEB)
-F (..\..\Libraries\servosandbuttons.c)(0x5E2A12F4)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\..\Libraries -I "..\..\Libraries\Libraries for OLED 128x64"-I.\RTE\_RGBSensorProyect-IC:\Users\bouyo\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\bouyo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o rgbsensorproyect\servosandbuttons.o --omf_browse rgbsensorproyect\servosandbuttons.crf --depend rgbsensorproyect\servosandbuttons.d)
+F (..\..\Libraries\servosandbuttons.c)(0x5E2A1E0B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\..\Libraries -I "..\..\Libraries\Libraries for OLED 128x64"-I.\RTE\_RGBSensorProyect-IC:\Users\bouyo\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\bouyo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o rgbsensorproyect\servosandbuttons.o --omf_browse rgbsensorproyect\servosandbuttons.crf --depend rgbsensorproyect\servosandbuttons.d)
 I (..\..\Libraries\servosandbuttons.h)(0x5E2A0EAF)
 I (../Inc/main.h)(0x5E29E206)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5DFC8DEB)
@@ -247,7 +247,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
 I (..\..\Libraries\sendwifi.h)(0x5E29E34D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9B3488)
-I (..\..\Libraries\tcs34725.h)(0x5E285B89)
+I (..\..\Libraries\tcs34725.h)(0x5E2A305C)
 I (..\..\Libraries\writeFlash.h)(0x5E23038D)
 I (..\..\Libraries\Libraries for OLED 128x64\test.h)(0x5D06D15A)
 F (..\..\Libraries\Libraries for OLED 128x64\fonts.c)(0x5710BB3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\..\Libraries -I "..\..\Libraries\Libraries for OLED 128x64"-I.\RTE\_RGBSensorProyect-IC:\Users\bouyo\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\bouyo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o rgbsensorproyect\fonts.o --omf_browse rgbsensorproyect\fonts.crf --depend rgbsensorproyect\fonts.d)
@@ -360,7 +360,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5DFC8DEB)
 I (..\..\Libraries\Libraries for OLED 128x64\fonts.h)(0x5E2740C2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-F (..\..\Libraries\sendwifi.c)(0x5E2A15FC)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\..\Libraries -I "..\..\Libraries\Libraries for OLED 128x64"-I.\RTE\_RGBSensorProyect-IC:\Users\bouyo\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\bouyo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o rgbsensorproyect\sendwifi.o --omf_browse rgbsensorproyect\sendwifi.crf --depend rgbsensorproyect\sendwifi.d)
+F (..\..\Libraries\sendwifi.c)(0x5E2A3368)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\..\Libraries -I "..\..\Libraries\Libraries for OLED 128x64"-I.\RTE\_RGBSensorProyect-IC:\Users\bouyo\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\bouyo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o rgbsensorproyect\sendwifi.o --omf_browse rgbsensorproyect\sendwifi.crf --depend rgbsensorproyect\sendwifi.d)
 I (..\..\Libraries\sendwifi.h)(0x5E29E34D)
 I (../Inc/main.h)(0x5E29E206)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5DFC8DEB)

@@ -1,5 +1,6 @@
 rgbsensorproyect\writeflash.o: ..\..\Libraries\writeFlash.c
 rgbsensorproyect\writeflash.o: ..\..\Libraries\writeFlash.h
+rgbsensorproyect\writeflash.o: ../Inc/main.h
 rgbsensorproyect\writeflash.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 rgbsensorproyect\writeflash.o: ../Inc/stm32f4xx_hal_conf.h
 rgbsensorproyect\writeflash.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h

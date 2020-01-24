@@ -1,5 +1,5 @@
 rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\servosandbuttons.c
-rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\servosandbuttons.h
+rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\tcs34725.h
 rgbsensorproyect\servosandbuttons.o: ../Inc/main.h
 rgbsensorproyect\servosandbuttons.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 rgbsensorproyect\servosandbuttons.o: ../Inc/stm32f4xx_hal_conf.h
@@ -34,13 +34,13 @@ rgbsensorproyect\servosandbuttons.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4
 rgbsensorproyect\servosandbuttons.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 rgbsensorproyect\servosandbuttons.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 rgbsensorproyect\servosandbuttons.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\writeFlash.h
 rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\Libraries for OLED 128x64\ssd1306.h
 rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\Libraries for OLED 128x64\fonts.h
 rgbsensorproyect\servosandbuttons.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 rgbsensorproyect\servosandbuttons.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\Libraries for OLED 128x64\test.h
+rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\servosandbuttons.h
 rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\sendwifi.h
 rgbsensorproyect\servosandbuttons.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 rgbsensorproyect\servosandbuttons.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\tcs34725.h
-rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\writeFlash.h
-rgbsensorproyect\servosandbuttons.o: ..\..\Libraries\Libraries for OLED 128x64\test.h

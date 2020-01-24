@@ -31,10 +31,10 @@
   - USART2	
 */
 
-	#include <string.h>
-	#include <stdio.h>
-	#include "tcs34725.h"
-	#include "sendwifi.h"
+#include <string.h>
+#include <stdio.h>
+#include "tcs34725.h"
+#include "sendwifi.h"
 
 /* USER CODE END Includes */
 
@@ -131,7 +131,7 @@ int main(void)
 	Init_cts34725();		                        // Config sensor color CTS34725
 
 	PositionServoSensor(POSUNO);	              // Put servo of sensor at init
-	PositionServoRamp(SRAZUL);                  // Put servo of ramp at init
+	PositionServoRamp(SRINICIO);                  // Put servo of ramp at init
 	
 	MY_FLASH_SetSectorAddrs(11, 0x080E0000);		//Define sector of memory flash
 	MY_FLASH_ReadN(0, ColorsThreshold, 4, DATA_TYPE_32); //Read memory flash

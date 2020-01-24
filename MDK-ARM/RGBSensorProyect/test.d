@@ -34,6 +34,7 @@ rgbsensorproyect\test.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_e
 rgbsensorproyect\test.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 rgbsensorproyect\test.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 rgbsensorproyect\test.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+rgbsensorproyect\test.o: ../Inc/main.h
 rgbsensorproyect\test.o: ..\..\Libraries\Libraries for OLED 128x64\fonts.h
 rgbsensorproyect\test.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 rgbsensorproyect\test.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

@@ -148,6 +148,7 @@ int main(void)
 	SSD1306_UpdateScreen(); 
 	
 	HAL_UART_Receive_DMA(&huart3, (uint8_t *)rxData, LONGDATA);	//For wifi conection
+	InitESP();
 
 	resetvar();
 

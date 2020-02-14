@@ -1,5 +1,5 @@
-rgbsensorproyect\fonts.o: ..\..\Libraries\Libraries for OLED 128x64\fonts.c
-rgbsensorproyect\fonts.o: ..\..\Libraries\Libraries for OLED 128x64\fonts.h
+rgbsensorproyect\fonts.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\fonts.c
+rgbsensorproyect\fonts.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\fonts.h
 rgbsensorproyect\fonts.o: ../Inc/main.h
 rgbsensorproyect\fonts.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 rgbsensorproyect\fonts.o: ../Inc/stm32f4xx_hal_conf.h

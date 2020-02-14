@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;        ../Drivers/STM32F4xx_HAL_Driver/Inc;        ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;        ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;        ../Drivers/CMSIS/Include;        ..\..\Libraries;        ..\..\Libraries\Libraries for OLED 128x64</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\..\Libraries_stm32f4;..\..\Libraries_stm32f4\Libraries for OLED 128x64</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -412,41 +412,6 @@
         <Group>
           <GroupName>Drivers/STM32F4xx_HAL_Driver</GroupName>
           <Files>
-            <File>
-              <FileName>tcs34725.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\tcs34725.c</FilePath>
-            </File>
-            <File>
-              <FileName>writeFlash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\writeFlash.c</FilePath>
-            </File>
-            <File>
-              <FileName>servosandbuttons.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\servosandbuttons.c</FilePath>
-            </File>
-            <File>
-              <FileName>fonts.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\Libraries for OLED 128x64\fonts.c</FilePath>
-            </File>
-            <File>
-              <FileName>ssd1306.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\Libraries for OLED 128x64\ssd1306.c</FilePath>
-            </File>
-            <File>
-              <FileName>test.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\Libraries for OLED 128x64\test.c</FilePath>
-            </File>
-            <File>
-              <FileName>sendwifi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\sendwifi.c</FilePath>
-            </File>
             <File>
               <FileName>stm32f4xx_hal_i2c.c</FileName>
               <FileType>1</FileType>
@@ -536,6 +501,41 @@
               <FileName>stm32f4xx_hal_uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>fonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries_stm32f4\Libraries for OLED 128x64\fonts.c</FilePath>
+            </File>
+            <File>
+              <FileName>ssd1306.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries_stm32f4\Libraries for OLED 128x64\ssd1306.c</FilePath>
+            </File>
+            <File>
+              <FileName>test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c</FilePath>
+            </File>
+            <File>
+              <FileName>writeFlash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries_stm32f4\writeFlash.c</FilePath>
+            </File>
+            <File>
+              <FileName>tcs34725.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries_stm32f4\tcs34725.c</FilePath>
+            </File>
+            <File>
+              <FileName>servosandbuttons.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries_stm32f4\servosandbuttons.c</FilePath>
+            </File>
+            <File>
+              <FileName>sendwifi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Libraries_stm32f4\sendwifi.c</FilePath>
             </File>
           </Files>
         </Group>

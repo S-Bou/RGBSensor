@@ -1,5 +1,5 @@
-rgbsensorproyect\tcs34725.o: ..\..\Libraries\tcs34725.c
-rgbsensorproyect\tcs34725.o: ..\..\Libraries\tcs34725.h
+rgbsensorproyect\tcs34725.o: ..\..\Libraries_stm32f4\tcs34725.c
+rgbsensorproyect\tcs34725.o: ..\..\Libraries_stm32f4\tcs34725.h
 rgbsensorproyect\tcs34725.o: ../Inc/main.h
 rgbsensorproyect\tcs34725.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 rgbsensorproyect\tcs34725.o: ../Inc/stm32f4xx_hal_conf.h
@@ -34,13 +34,13 @@ rgbsensorproyect\tcs34725.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_p
 rgbsensorproyect\tcs34725.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 rgbsensorproyect\tcs34725.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 rgbsensorproyect\tcs34725.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-rgbsensorproyect\tcs34725.o: ..\..\Libraries\writeFlash.h
-rgbsensorproyect\tcs34725.o: ..\..\Libraries\Libraries for OLED 128x64\ssd1306.h
-rgbsensorproyect\tcs34725.o: ..\..\Libraries\Libraries for OLED 128x64\fonts.h
+rgbsensorproyect\tcs34725.o: ..\..\Libraries_stm32f4\writeFlash.h
+rgbsensorproyect\tcs34725.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\ssd1306.h
+rgbsensorproyect\tcs34725.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\fonts.h
 rgbsensorproyect\tcs34725.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 rgbsensorproyect\tcs34725.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-rgbsensorproyect\tcs34725.o: ..\..\Libraries\Libraries for OLED 128x64\test.h
-rgbsensorproyect\tcs34725.o: ..\..\Libraries\servosandbuttons.h
-rgbsensorproyect\tcs34725.o: ..\..\Libraries\sendwifi.h
+rgbsensorproyect\tcs34725.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.h
+rgbsensorproyect\tcs34725.o: ..\..\Libraries_stm32f4\servosandbuttons.h
+rgbsensorproyect\tcs34725.o: ..\..\Libraries_stm32f4\sendwifi.h
 rgbsensorproyect\tcs34725.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 rgbsensorproyect\tcs34725.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

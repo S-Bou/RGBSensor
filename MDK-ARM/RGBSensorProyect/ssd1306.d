@@ -1,5 +1,5 @@
-rgbsensorproyect\ssd1306.o: ..\..\Libraries\Libraries for OLED 128x64\ssd1306.c
-rgbsensorproyect\ssd1306.o: ..\..\Libraries\Libraries for OLED 128x64\ssd1306.h
+rgbsensorproyect\ssd1306.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\ssd1306.c
+rgbsensorproyect\ssd1306.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\ssd1306.h
 rgbsensorproyect\ssd1306.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 rgbsensorproyect\ssd1306.o: ../Inc/stm32f4xx_hal_conf.h
 rgbsensorproyect\ssd1306.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
@@ -34,6 +34,6 @@ rgbsensorproyect\ssd1306.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ti
 rgbsensorproyect\ssd1306.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 rgbsensorproyect\ssd1306.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 rgbsensorproyect\ssd1306.o: ../Inc/main.h
-rgbsensorproyect\ssd1306.o: ..\..\Libraries\Libraries for OLED 128x64\fonts.h
+rgbsensorproyect\ssd1306.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\fonts.h
 rgbsensorproyect\ssd1306.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 rgbsensorproyect\ssd1306.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

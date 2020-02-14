@@ -1,5 +1,5 @@
-rgbsensorproyect\sendwifi.o: ..\..\Libraries\sendwifi.c
-rgbsensorproyect\sendwifi.o: ..\..\Libraries\sendwifi.h
+rgbsensorproyect\sendwifi.o: ..\..\Libraries_stm32f4\sendwifi.c
+rgbsensorproyect\sendwifi.o: ..\..\Libraries_stm32f4\sendwifi.h
 rgbsensorproyect\sendwifi.o: ../Inc/main.h
 rgbsensorproyect\sendwifi.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 rgbsensorproyect\sendwifi.o: ../Inc/stm32f4xx_hal_conf.h

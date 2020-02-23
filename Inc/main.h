@@ -60,6 +60,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define ButtonMenu_Pin GPIO_PIN_7
+#define ButtonMenu_GPIO_Port GPIOE
+#define ButtonAcept_Pin GPIO_PIN_8
+#define ButtonAcept_GPIO_Port GPIOE
 #define GreenLed_Pin GPIO_PIN_12
 #define GreenLed_GPIO_Port GPIOD
 #define OrangeLed_Pin GPIO_PIN_13
@@ -70,10 +74,6 @@ void Error_Handler(void);
 #define BlueLed_GPIO_Port GPIOD
 #define LedSensor_Pin GPIO_PIN_9
 #define LedSensor_GPIO_Port GPIOB
-#define ButtonAcept_Pin GPIO_PIN_0
-#define ButtonAcept_GPIO_Port GPIOE
-#define ButtonMenu_Pin GPIO_PIN_1
-#define ButtonMenu_GPIO_Port GPIOE
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

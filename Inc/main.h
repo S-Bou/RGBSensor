@@ -64,6 +64,8 @@ void Error_Handler(void);
 #define ButtonMenu_GPIO_Port GPIOE
 #define ButtonAcept_Pin GPIO_PIN_8
 #define ButtonAcept_GPIO_Port GPIOE
+#define LaserSensor_Pin GPIO_PIN_11
+#define LaserSensor_GPIO_Port GPIOE
 #define GreenLed_Pin GPIO_PIN_12
 #define GreenLed_GPIO_Port GPIOD
 #define OrangeLed_Pin GPIO_PIN_13

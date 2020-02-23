@@ -165,8 +165,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 		ButtonAceptPressed();
 		ButtonMenuPressed();
-		//HAL_GPIO_TogglePin(BlueLed_GPIO_Port, BlueLed_Pin);
-
+		
   }
   /* USER CODE END 3 */
 }
@@ -488,6 +487,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : LaserSensor_Pin */
+  GPIO_InitStruct.Pin = LaserSensor_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(LaserSensor_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : GreenLed_Pin OrangeLed_Pin RedLed_Pin BlueLed_Pin */
   GPIO_InitStruct.Pin = GreenLed_Pin|OrangeLed_Pin|RedLed_Pin|BlueLed_Pin;

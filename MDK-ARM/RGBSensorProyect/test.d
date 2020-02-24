@@ -1,7 +1,7 @@
-rgbsensorproyect\test.o: ..\..\Libraries\Libraries for OLED 128x64\test.c
-rgbsensorproyect\test.o: ..\..\Libraries\Libraries for OLED 128x64\test.h
+rgbsensorproyect\test.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c
+rgbsensorproyect\test.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.h
 rgbsensorproyect\test.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-rgbsensorproyect\test.o: ..\..\Libraries\Libraries for OLED 128x64\ssd1306.h
+rgbsensorproyect\test.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\ssd1306.h
 rgbsensorproyect\test.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 rgbsensorproyect\test.o: ../Inc/stm32f4xx_hal_conf.h
 rgbsensorproyect\test.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
@@ -35,6 +35,6 @@ rgbsensorproyect\test.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 rgbsensorproyect\test.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 rgbsensorproyect\test.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 rgbsensorproyect\test.o: ../Inc/main.h
-rgbsensorproyect\test.o: ..\..\Libraries\Libraries for OLED 128x64\fonts.h
+rgbsensorproyect\test.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\fonts.h
 rgbsensorproyect\test.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 rgbsensorproyect\test.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

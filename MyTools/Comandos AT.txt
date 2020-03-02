@@ -1,0 +1,55 @@
+Test de inicio: AT
+
+Pregunta versión: AT+GMR
+
+Para cambiar la velocidad de conexión: AT+CIOBAUD=115200 ó  9600etc.
+
+Pregunta el modo en el que está: AT+CWMODE?
+
+Le ordena el modo de estado: AT+CWMODE=1(cliente),2(servidor),3(cliente+servidor)
+
+Detecta redes wifi: AT+CWLAP
+
+Conectarse a red wifi: AT+CWJAP="SSID","clave"
+
+Pregunta dirección IP asignada (Coger:STAIP,"192.168.1.XX"): AT+CIFSR
+
+Para que soporte multiples conexiones: AT+CIPMUX=1
+
+Para que funcione como servidor por el puerto 80: AT+CIPSERVER=1,80
+
+Enviar desde terminal a dirección(0->canal,X->número de caracteres): AT+CIPSEND=0,X + AT+CIPCLOSE=0
+
+Restaura el microcontrolador: AT+RESTORE
+
+------------------------------------------------- LUA ----------------------------------------------------
+
+wifi.setmode(wifi.STATION)
+
+wifi.sta.config("MiFibra-1B8A","3jiZbj4P") 
+
+ip = wifi.sta.getip()
+	    print(wifi.sta.getip())
+
+station_cfg={}
+station_cfg.ssid="MiFibra-1B8A"
+station_cfg.pwd="3jiZbj4P"
+station_cfg.save=false
+wifi.sta.config(station_cfg)
+
+-----------------------------------------------------------------------------------------------------
+
+AT-Commands used in the software:
+usart_write_string(USART_WLAN, "AAT\r\n");
+usart_write_string(USART_WLAN, "AT+RST\r\n");
+usart_write_string(USART_WLAN, "AT+GMR\r\n");
+usart_write_string(USART_WLAN, "AT?\r\n");
+usart_write_string(USART_WLAN, "AT+CWMODE=3\r\n");
+usart_write_string(USART_WLAN, "AT+CWMODE?\r\n");
+usart_write_string(USART_WLAN, "AT+CWSAP=\"ESPnext\",\"\",3,0\r\n");
+usart_write_string(USART_WLAN, "AT+CIPMUX=1\r\n");
+usart_write_string(USART_WLAN, "AT+CIPMUX?\r\n");
+usart_write_string(USART_WLAN, "AT+CIPSERVER=1,1314\r\n");
+usart_write_string(USART_WLAN, "AT+CIPSTO=10000\r\n");
+usart_write_string(USART_WLAN, "AT+CIPSEND=0,577\r\n");
+usart_write_string(USART_WLAN, "AT+CIPCLOSE=0\r\n");

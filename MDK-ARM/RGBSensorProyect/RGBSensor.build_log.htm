@@ -22,12 +22,196 @@ Dialog DLL:      TCM.DLL V1.36.5.0
  
 <h2>Project:</h2>
 D:\Proyectos\GitHub S-Bou\RGBSensor\MDK-ARM\RGBSensorProyect.uvprojx
-Project File Date:  03/23/2020
+Project File Date:  05/04/2020
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'RGBSensorProyect'
-"RGBSensorProyect\RGBSensor.axf" - 0 Error(s), 0 Warning(s).
+compiling writeFlash.c...
+compiling tcs34725.c...
+..\MyLibraries\ssd1306.h(241): warning:  #1295-D: Deprecated declaration ssd1306_I2C_Init - give arg types
+  void ssd1306_I2C_Init();
+..\..\Libraries_stm32f4\tcs34725.c(196): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts ("Put balls in this order:", &Font_7x10, 1); 
+..\..\Libraries_stm32f4\tcs34725.c(198): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts ("order: Red, Green, ", &Font_7x10, 1);		
+..\..\Libraries_stm32f4\tcs34725.c(200): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts ("Blue and Purple.", &Font_7x10, 1);  
+..\..\Libraries_stm32f4\tcs34725.c(202): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts ("And press button ", &Font_7x10, 1);  
+..\..\Libraries_stm32f4\tcs34725.c(204): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts ("acept...", &Font_7x10, 1); 		
+..\..\Libraries_stm32f4\tcs34725.c(232): warning:  #188-D: enumerated type mixed with another type
+  					SSD1306_Puts ("Calibrating...", &Font_7x10, 1);  
+..\..\Libraries_stm32f4\tcs34725.c(235): warning:  #188-D: enumerated type mixed with another type
+  					SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\tcs34725.c(243): warning:  #188-D: enumerated type mixed with another type
+  					SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\tcs34725.c(251): warning:  #188-D: enumerated type mixed with another type
+  					SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\tcs34725.c(259): warning:  #188-D: enumerated type mixed with another type
+  					SSD1306_Puts (uartComAT, &Font_7x10, 1);  
+..\..\Libraries_stm32f4\tcs34725.c(324): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\tcs34725.c(327): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\tcs34725.c(330): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\tcs34725.c(333): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\tcs34725.c(337): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\tcs34725.c: 16 warnings, 0 errors
+compiling sendwifi.c...
+compiling main.c...
+..\MyLibraries\ssd1306.h(241): warning:  #1295-D: Deprecated declaration ssd1306_I2C_Init - give arg types
+  void ssd1306_I2C_Init();
+../Src/main.c(143): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Puts ("PUSH BUTTON", &Font_11x18, 1);
+../Src/main.c(145): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Puts ("MENU", &Font_11x18, 1);
+../Src/main.c(147): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Puts ("FOR START", &Font_11x18, 1);
+../Src/main.c: 4 warnings, 0 errors
+compiling servosandbuttons.c...
+..\MyLibraries\ssd1306.h(241): warning:  #1295-D: Deprecated declaration ssd1306_I2C_Init - give arg types
+  void ssd1306_I2C_Init();
+..\..\Libraries_stm32f4\servosandbuttons.c(139): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(142): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(145): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(148): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(152): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(182): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(185): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(188): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(191): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(195): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(215): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);  
+..\..\Libraries_stm32f4\servosandbuttons.c(218): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(221): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(224): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(227): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);
+..\..\Libraries_stm32f4\servosandbuttons.c(228): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_DrawFilledCircle(5, 19, 4, 1);
+..\..\Libraries_stm32f4\servosandbuttons.c(236): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);  
+..\..\Libraries_stm32f4\servosandbuttons.c(239): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(242): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(245): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(248): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1); 
+..\..\Libraries_stm32f4\servosandbuttons.c(249): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_DrawFilledCircle(5, 31, 4, 1);
+..\..\Libraries_stm32f4\servosandbuttons.c(257): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);  
+..\..\Libraries_stm32f4\servosandbuttons.c(260): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(263): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(266): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(269): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1); 
+..\..\Libraries_stm32f4\servosandbuttons.c(270): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_DrawFilledCircle(5, 43, 4, 1);
+..\..\Libraries_stm32f4\servosandbuttons.c(278): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);  
+..\..\Libraries_stm32f4\servosandbuttons.c(281): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(284): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(287): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1);   
+..\..\Libraries_stm32f4\servosandbuttons.c(290): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts (uartComAT, &Font_7x10, 1); 
+..\..\Libraries_stm32f4\servosandbuttons.c(291): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_DrawFilledCircle(5, 56, 4, 1);
+..\..\Libraries_stm32f4\servosandbuttons.c: 35 warnings, 0 errors
+compiling test.c...
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\ssd1306.h(241): warning:  #1295-D: Deprecated declaration ssd1306_I2C_Init - give arg types
+  void ssd1306_I2C_Init();
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(23): warning:  #188-D: enumerated type mixed with another type
+      		SSD1306_DrawLine(x1, y1, x2, y2, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(30): warning:  #188-D: enumerated type mixed with another type
+      		SSD1306_DrawLine(x1, y1, x2, y2, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(45): warning:  #188-D: enumerated type mixed with another type
+      		SSD1306_DrawLine(x1, y1, x2, y2, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(52): warning:  #188-D: enumerated type mixed with another type
+      		SSD1306_DrawLine(x1, y1, x2, y2, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(67): warning:  #188-D: enumerated type mixed with another type
+      	SSD1306_DrawLine(x1, y1, x2, y2, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(74): warning:  #188-D: enumerated type mixed with another type
+      		SSD1306_DrawLine(x1, y1, x2, y2, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(89): warning:  #188-D: enumerated type mixed with another type
+      		SSD1306_DrawLine(x1, y1, x2, y2, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(96): warning:  #188-D: enumerated type mixed with another type
+      		SSD1306_DrawLine(x1, y1, x2, y2, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(114): warning:  #188-D: enumerated type mixed with another type
+          SSD1306_DrawRectangle((SSD1306_WIDTH/2) - i2, (SSD1306_HEIGHT/2) - i2, i, i, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(132): warning:  #188-D: enumerated type mixed with another type
+          SSD1306_DrawFilledRectangle(cx - i2, cy - i2, i, i, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(148): warning:  #188-D: enumerated type mixed with another type
+              SSD1306_DrawFilledCircle(x, y, radius, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(167): warning:  #188-D: enumerated type mixed with another type
+              SSD1306_DrawCircle(x, y, radius, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c(184): warning:  #188-D: enumerated type mixed with another type
+          SSD1306_DrawTriangle(cx , cy - i, cx - i, cy + i, cx + i, cy + i, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.c: 14 warnings, 0 errors
+compiling fonts.c...
+compiling stm32f4xx_it.c...
+..\MyLibraries\ssd1306.h(241): warning:  #1295-D: Deprecated declaration ssd1306_I2C_Init - give arg types
+  void ssd1306_I2C_Init();
+../Src/stm32f4xx_it.c: 1 warning, 0 errors
+compiling ssd1306.c...
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\ssd1306.h(241): warning:  #1295-D: Deprecated declaration ssd1306_I2C_Init - give arg types
+  void ssd1306_I2C_Init();
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\ssd1306.c(160): warning:  #188-D: enumerated type mixed with another type
+              if(byte & 0x80) SSD1306_DrawPixel(x+i, y, color);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\ssd1306.c(614): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Fill (0);
+..\..\Libraries_stm32f4\Libraries for OLED 128x64\ssd1306.c: 3 warnings, 0 errors
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_i2c_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_tim.c...
+linking...
+Program Size: Code=17880 RO-data=6440 RW-data=80 ZI-data=3016  
+FromELF: creating hex file...
+"RGBSensorProyect\RGBSensor.axf" - 0 Error(s), 73 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -50,7 +234,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.3.0
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:22
 </pre>
 </body>
 </html>

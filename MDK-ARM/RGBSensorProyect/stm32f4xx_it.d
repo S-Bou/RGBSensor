@@ -34,14 +34,14 @@ rgbsensorproyect\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_h
 rgbsensorproyect\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 rgbsensorproyect\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 rgbsensorproyect\stm32f4xx_it.o: ../Inc/stm32f4xx_it.h
-rgbsensorproyect\stm32f4xx_it.o: ..\..\Libraries_stm32f4\tcs34725.h
-rgbsensorproyect\stm32f4xx_it.o: ..\..\Libraries_stm32f4\writeFlash.h
-rgbsensorproyect\stm32f4xx_it.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\ssd1306.h
-rgbsensorproyect\stm32f4xx_it.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\fonts.h
+rgbsensorproyect\stm32f4xx_it.o: ..\MyLibraries\tcs34725.h
+rgbsensorproyect\stm32f4xx_it.o: ..\MyLibraries\writeFlash.h
+rgbsensorproyect\stm32f4xx_it.o: ..\MyLibraries\ssd1306.h
+rgbsensorproyect\stm32f4xx_it.o: ..\MyLibraries\fonts.h
 rgbsensorproyect\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 rgbsensorproyect\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-rgbsensorproyect\stm32f4xx_it.o: ..\..\Libraries_stm32f4\Libraries for OLED 128x64\test.h
-rgbsensorproyect\stm32f4xx_it.o: ..\..\Libraries_stm32f4\servosandbuttons.h
-rgbsensorproyect\stm32f4xx_it.o: ..\..\Libraries_stm32f4\sendwifi.h
+rgbsensorproyect\stm32f4xx_it.o: ..\MyLibraries\test.h
+rgbsensorproyect\stm32f4xx_it.o: ..\MyLibraries\servosandbuttons.h
+rgbsensorproyect\stm32f4xx_it.o: ..\MyLibraries\sendwifi.h
 rgbsensorproyect\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 rgbsensorproyect\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

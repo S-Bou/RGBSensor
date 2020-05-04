@@ -25,7 +25,7 @@
 /* USER CODE BEGIN Includes */
 /*
  Periferics used and aplication:
-	- TIM3_CH1 -> for servo of sensor of colour
+	- TIM3_CH1 -> for servo of colour sensor
 	- TIM3_CH2 -> for servo of ramp
   - USART1
   - USART2	

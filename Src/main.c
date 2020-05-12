@@ -3,6 +3,8 @@
   ******************************************************************************
   * @file           : main.c
   * @brief          : Main program body
+	* @author         : Sergio Bou Grau
+  * @date           : 11/05/2020
   ******************************************************************************
   * @attention
   *
@@ -27,8 +29,13 @@
  Periferics used and aplication:
 	- TIM3_CH1 -> for servo of colour sensor
 	- TIM3_CH2 -> for servo of ramp
-  - USART1
-  - USART2	
+  - USART2   -> for FTDI232
+  - USART3	 -> for ESP8266
+	- TIM3     -> for servo of sensor (PWM CH1) 
+	           -> for servo of ramp   (PWM CH2) 
+	- TIM5     -> for timers
+  - I2C1     -> for oled 128x64
+  - I2C2     -> for TCS34725 	
 */
 
 #include <string.h>
@@ -97,7 +104,6 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
-  
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -125,13 +131,14 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
+	
 	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);	  //Start the PWM for servo of sensor
 	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);   //Start the PWM for servo of ramp
 	
 	Init_cts34725();		                        // Config sensor color CTS34725
 
 	PositionServoSensor(POSUNO);	              // Put servo of sensor at init
-	PositionServoRamp(SRINICIO);                  // Put servo of ramp at init
+	PositionServoRamp(SRINICIO);                // Put servo of ramp at init
 	
 	MY_FLASH_SetSectorAddrs(11, 0x080E0000);		//Define sector of memory flash
 	MY_FLASH_ReadN(0, ColorsThreshold, 4, DATA_TYPE_32); //Read memory flash
@@ -150,11 +157,9 @@ int main(void)
 	HAL_UART_Receive_DMA(&huart3, (uint8_t *)rxData, LONGDATA);	//For wifi conection
 	InitESP();
 
-	resetvar();
+	resetvar();                                 //Reset variables 
 
   /* USER CODE END 2 */
- 
- 
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -165,7 +170,6 @@ int main(void)
     /* USER CODE BEGIN 3 */
 		ButtonAceptPressed();
 		ButtonMenuPressed();
-		
   }
   /* USER CODE END 3 */
 }

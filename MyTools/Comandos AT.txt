@@ -10,7 +10,7 @@ Le ordena el modo de estado: AT+CWMODE=1(cliente),2(servidor),3(cliente+servidor
 
 Detecta redes wifi: AT+CWLAP
 
-Conectarse a red wifi: AT+CWJAP="SSID","clave"	AT+CWJAP="AndroidAP8838","42c7a645c4f0"
+Conectarse a red wifi: AT+CWJAP="SSID","clave"	AT+CWJAP="NAME","PASS"
 
 Pregunta dirección IP asignada (Coger:STAIP,"192.168.1.XX"): AT+CIFSR
 

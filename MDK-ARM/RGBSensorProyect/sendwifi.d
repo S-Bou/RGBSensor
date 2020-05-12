@@ -36,3 +36,9 @@ rgbsensorproyect\sendwifi.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_t
 rgbsensorproyect\sendwifi.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 rgbsensorproyect\sendwifi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 rgbsensorproyect\sendwifi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+rgbsensorproyect\sendwifi.o: ..\..\Libraries_stm32f4\servosandbuttons.h
+rgbsensorproyect\sendwifi.o: ..\MyLibraries\ssd1306.h
+rgbsensorproyect\sendwifi.o: ..\MyLibraries\fonts.h
+rgbsensorproyect\sendwifi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+rgbsensorproyect\sendwifi.o: ..\..\Libraries_stm32f4\sendwifi.h
+rgbsensorproyect\sendwifi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

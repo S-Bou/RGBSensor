@@ -3,11 +3,11 @@
 <title>Static Call Graph - [RGBSensorProyect\RGBSensor.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image RGBSensorProyect\RGBSensor.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon May 04 19:22:01 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue May 12 11:33:04 2020
 <BR><P>
-<H3>Maximum Stack Usage =       1648 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        912 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-main &rArr; ButtonAceptPressed &rArr; ButtonMenuAction &rArr; UpPage &rArr; HAL_UART_Transmit &rArr; UART_WaitOnFlagUntilTimeout
+main &rArr; ButtonAceptPressed &rArr; ButtonMenuAction &rArr; CalibrateColour &rArr; Show_console &rArr; DefineColour &rArr; SSD1306_UpdateScreen &rArr; ssd1306_I2C_WriteMulti &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 <P>
 <H3>
 Mutually Recursive functions
@@ -431,8 +431,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7c]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Store_Colors
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_console
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DefineColour
@@ -473,11 +473,11 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
 <P><STRONG><a name="[6b]"></a>ButtonAceptPressed</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, servosandbuttons.o(i.ButtonAceptPressed))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1640<LI>Call Chain = ButtonAceptPressed &rArr; ButtonMenuAction &rArr; UpPage &rArr; HAL_UART_Transmit &rArr; UART_WaitOnFlagUntilTimeout
+<BR><BR>[Stack]<UL><LI>Max Depth = 904<LI>Call Chain = ButtonAceptPressed &rArr; ButtonMenuAction &rArr; CalibrateColour &rArr; Show_console &rArr; DefineColour &rArr; SSD1306_UpdateScreen &rArr; ssd1306_I2C_WriteMulti &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -493,20 +493,23 @@ Global Symbols
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Clear
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
 </UL>
 
-<P><STRONG><a name="[6f]"></a>ButtonMenuAction</STRONG> (Thumb, 552 bytes, Stack size 136 bytes, servosandbuttons.o(i.ButtonMenuAction))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1624<LI>Call Chain = ButtonMenuAction &rArr; UpPage &rArr; HAL_UART_Transmit &rArr; UART_WaitOnFlagUntilTimeout
+<P><STRONG><a name="[6f]"></a>ButtonMenuAction</STRONG> (Thumb, 760 bytes, Stack size 136 bytes, servosandbuttons.o(i.ButtonMenuAction))
+<BR><BR>[Stack]<UL><LI>Max Depth = 888<LI>Call Chain = ButtonMenuAction &rArr; CalibrateColour &rArr; Show_console &rArr; DefineColour &rArr; SSD1306_UpdateScreen &rArr; ssd1306_I2C_WriteMulti &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_TogglePin
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenu
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_UpdateScreen
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Puts
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_GotoXY
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Clear
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_TogglePin
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CicleColor
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
@@ -514,45 +517,47 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonAceptPressed
 </UL>
 
-<P><STRONG><a name="[7a]"></a>ButtonMenuPressed</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, servosandbuttons.o(i.ButtonMenuPressed))
+<P><STRONG><a name="[78]"></a>ButtonMenuPressed</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, servosandbuttons.o(i.ButtonMenuPressed))
 <BR><BR>[Stack]<UL><LI>Max Depth = 528<LI>Call Chain = ButtonMenuPressed &rArr; ButtonMenu &rArr; SSD1306_Clear &rArr; SSD1306_UpdateScreen &rArr; ssd1306_I2C_WriteMulti &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenu
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
+<LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[6e]"></a>CalibrateColour</STRONG> (Thumb, 470 bytes, Stack size 136 bytes, tcs34725.o(i.CalibrateColour))
 <BR><BR>[Stack]<UL><LI>Max Depth = 752<LI>Call Chain = CalibrateColour &rArr; Show_console &rArr; DefineColour &rArr; SSD1306_UpdateScreen &rArr; ssd1306_I2C_WriteMulti &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_UpdateScreen
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_UpdateScreen
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Puts
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_GotoXY
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Clear
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PositionServoSensor
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PositionServoRamp
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Store_Colors
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_console
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read_cts34725
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonAceptPressed
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
+<BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonAceptPressed
 </UL>
 
 <P><STRONG><a name="[77]"></a>CicleColor</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, tcs34725.o(i.CicleColor))
 <BR><BR>[Stack]<UL><LI>Max Depth = 632<LI>Call Chain = CicleColor &rArr; Show_console &rArr; DefineColour &rArr; SSD1306_UpdateScreen &rArr; ssd1306_I2C_WriteMulti &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PositionServoSensor
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PositionServoSensor
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_console
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read_cts34725
 </UL>
@@ -577,8 +582,8 @@ Global Symbols
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_GotoXY
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PositionServoRamp
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_console
 </UL>
@@ -630,11 +635,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestLines
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
-<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonAceptPressed
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonAceptPressed
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CicleColor
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
 </UL>
@@ -669,40 +674,40 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[6c]"></a>HAL_GPIO_ReadPin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_ReadPin))
-<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
-<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonAceptPressed
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonAceptPressed
 </UL>
 
-<P><STRONG><a name="[78]"></a>HAL_GPIO_TogglePin</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_TogglePin))
+<P><STRONG><a name="[79]"></a>HAL_GPIO_TogglePin</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_TogglePin))
 <BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
 </UL>
 
 <P><STRONG><a name="[7b]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
-<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_str
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxCpltCallback
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CicleColor
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 </UL>
 
 <P><STRONG><a name="[86]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_hal.o(i.HAL_GetTick))
-<BR><BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<BR><BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_IsDeviceReady
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Transmit
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_IsDeviceReady
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Init
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Receive
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnTXEFlagUntilTimeout
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnRXNEFlagUntilTimeout
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnMasterAddressFlagUntilTimeout
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnFlagUntilTimeout
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnBTFFlagUntilTimeout
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Receive
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Init
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
 </UL>
@@ -710,8 +715,8 @@ Global Symbols
 <P><STRONG><a name="[92]"></a>HAL_I2C_Init</STRONG> (Thumb, 376 bytes, Stack size 16 bytes, stm32f4xx_hal_i2c.o(i.HAL_I2C_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = HAL_I2C_Init &rArr; HAL_I2C_MspInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_MspInit
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK1Freq
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK1Freq
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_MspInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -747,8 +752,8 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_I2C_WriteMulti
 <LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ssd1306_I2C_Write
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_cts34725
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read_cts34725
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_cts34725
 </UL>
 
 <P><STRONG><a name="[93]"></a>HAL_I2C_MspInit</STRONG> (Thumb, 142 bytes, Stack size 48 bytes, stm32f4xx_hal_msp.o(i.HAL_I2C_MspInit))
@@ -767,9 +772,9 @@ Global Symbols
 <P><STRONG><a name="[a0]"></a>HAL_Init</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, stm32f4xx_hal.o(i.HAL_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = HAL_Init &rArr; HAL_InitTick &rArr; HAL_NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriorityGrouping
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriorityGrouping
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_MspInit
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -802,9 +807,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_MspInit
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_MspInit
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
 </UL>
 
 <P><STRONG><a name="[a1]"></a>HAL_NVIC_SetPriorityGrouping</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f4xx_hal_cortex.o(i.HAL_NVIC_SetPriorityGrouping))
@@ -839,7 +844,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
 </UL>
 
-<P><STRONG><a name="[a9]"></a>HAL_RCC_OscConfig</STRONG> (Thumb, 834 bytes, Stack size 40 bytes, stm32f4xx_hal_rcc.o(i.HAL_RCC_OscConfig))
+<P><STRONG><a name="[a9]"></a>HAL_RCC_OscConfig</STRONG> (Thumb, 840 bytes, Stack size 40 bytes, stm32f4xx_hal_rcc.o(i.HAL_RCC_OscConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = HAL_RCC_OscConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
@@ -886,12 +891,12 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ad]"></a>HAL_TIM_ConfigClockSource</STRONG> (Thumb, 214 bytes, Stack size 16 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_ConfigClockSource))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_TIM_ConfigClockSource &rArr; TIM_TI2_ConfigInputStage
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_TIM_ConfigClockSource &rArr; TIM_ETR_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TI2_ConfigInputStage
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ETR_SetConfig
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TI2_ConfigInputStage
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TI1_ConfigInputStage
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITRx_SetConfig
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ETR_SetConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
 </UL>
@@ -928,12 +933,12 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[bb]"></a>HAL_TIM_PWM_ConfigChannel</STRONG> (Thumb, 208 bytes, Stack size 16 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_ConfigChannel))
-<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = HAL_TIM_PWM_ConfigChannel &rArr; TIM_OC3_SetConfig
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = HAL_TIM_PWM_ConfigChannel &rArr; TIM_OC2_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC4_SetConfig
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC2_SetConfig
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC4_SetConfig
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC3_SetConfig
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC1_SetConfig
-<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC2_SetConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
 </UL>
@@ -1005,16 +1010,16 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Start_IT
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxCpltCallback
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxCpltCallback
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[ca]"></a>HAL_UART_RxCpltCallback</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, sendwifi.o(i.HAL_UART_RxCpltCallback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = HAL_UART_RxCpltCallback &rArr; HAL_UART_Receive_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_str
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMAReceiveCplt
 </UL>
@@ -1029,29 +1034,33 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Store_Colors
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_console
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DefineColour
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
 </UL>
 
-<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.HardFault_Handler))
-<BR><BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.HardFault_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 528 + In Cycle
+<LI>Call Chain = HardFault_Handler &rArr;  HardFault_Handler (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
+<LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[cf]"></a>InitESP</STRONG> (Thumb, 110 bytes, Stack size 120 bytes, sendwifi.o(i.InitESP))
-<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = InitESP &rArr; HAL_UART_Transmit &rArr; UART_WaitOnFlagUntilTimeout
+<P><STRONG><a name="[cf]"></a>InitESP</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, sendwifi.o(i.InitESP))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = InitESP &rArr; HAL_UART_Transmit &rArr; UART_WaitOnFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1099,16 +1108,16 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
 <P><STRONG><a name="[81]"></a>PositionServoRamp</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, servosandbuttons.o(i.PositionServoRamp))
-<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_console
+<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_console
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DefineColour
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[7e]"></a>PositionServoSensor</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, servosandbuttons.o(i.PositionServoSensor))
-<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CicleColor
+<BR><BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CicleColor
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[7f]"></a>Read_cts34725</STRONG> (Thumb, 224 bytes, Stack size 56 bytes, tcs34725.o(i.Read_cts34725))
@@ -1128,10 +1137,10 @@ Global Symbols
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_UpdateScreen
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestLines
-<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenu
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[75]"></a>SSD1306_DrawFilledCircle</STRONG> (Thumb, 260 bytes, Stack size 48 bytes, ssd1306.o(i.SSD1306_DrawFilledCircle))
@@ -1148,8 +1157,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_DrawPixel
 </UL>
-<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_DrawFilledCircle
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestLines
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestLines
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_DrawFilledCircle
 </UL>
 
 <P><STRONG><a name="[da]"></a>SSD1306_DrawPixel</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, ssd1306.o(i.SSD1306_DrawPixel))
@@ -1168,11 +1177,11 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[72]"></a>SSD1306_GotoXY</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, ssd1306.o(i.SSD1306_GotoXY))
-<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
+<BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenu
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DefineColour
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[dc]"></a>SSD1306_Init</STRONG> (Thumb, 350 bytes, Stack size 8 bytes, ssd1306.o(i.SSD1306_Init))
@@ -1200,11 +1209,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Putc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
+<BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenu
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DefineColour
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[76]"></a>SSD1306_UpdateScreen</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, ssd1306.o(i.SSD1306_UpdateScreen))
@@ -1215,12 +1224,12 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestLines
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Init
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Clear
-<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenu
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Clear
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DefineColour
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.SVC_Handler))
@@ -1232,8 +1241,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PositionServoRamp
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DefineColour
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CicleColor
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
@@ -1242,10 +1251,10 @@ Global Symbols
 <P><STRONG><a name="[82]"></a>Store_Colors</STRONG> (Thumb, 46 bytes, Stack size 104 bytes, tcs34725.o(i.Store_Colors))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = Store_Colors &rArr; MY_FLASH_WriteN &rArr; HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MY_FLASH_WriteN
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MY_FLASH_WriteN
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalibrateColour
 </UL>
@@ -1303,22 +1312,22 @@ Global Symbols
 <P><STRONG><a name="[e3]"></a>TestLines</STRONG> (Thumb, 352 bytes, Stack size 32 bytes, test.o(i.TestLines))
 <BR><BR>[Stack]<UL><LI>Max Depth = 432<LI>Call Chain = TestLines &rArr; SSD1306_Clear &rArr; SSD1306_UpdateScreen &rArr; ssd1306_I2C_WriteMulti &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_DrawLine
+<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_DrawLine
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_UpdateScreen
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Clear
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[79]"></a>UpPage</STRONG> (Thumb, 204 bytes, Stack size 1432 bytes, sendwifi.o(i.UpPage))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1488<LI>Call Chain = UpPage &rArr; HAL_UART_Transmit &rArr; UART_WaitOnFlagUntilTimeout
+<P><STRONG><a name="[7a]"></a>UpPage</STRONG> (Thumb, 234 bytes, Stack size 536 bytes, sendwifi.o(i.UpPage))
+<BR><BR>[Stack]<UL><LI>Max Depth = 592<LI>Call Chain = UpPage &rArr; HAL_UART_Transmit &rArr; UART_WaitOnFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
 </UL>
@@ -1340,10 +1349,10 @@ Global Symbols
 <P><STRONG><a name="[73]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0sprintf$3))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
+<BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuAction
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenu
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpPage
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Store_Colors
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_console
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DefineColour
@@ -1365,30 +1374,30 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[5b]"></a>main</STRONG> (Thumb, 338 bytes, Stack size 8 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1648<LI>Call Chain = main &rArr; ButtonAceptPressed &rArr; ButtonMenuAction &rArr; UpPage &rArr; HAL_UART_Transmit &rArr; UART_WaitOnFlagUntilTimeout
+<BR><BR>[Stack]<UL><LI>Max Depth = 912<LI>Call Chain = main &rArr; ButtonAceptPressed &rArr; ButtonMenuAction &rArr; CalibrateColour &rArr; Show_console &rArr; DefineColour &rArr; SSD1306_UpdateScreen &rArr; ssd1306_I2C_WriteMulti &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;resetvar
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestLines
+<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestLines
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Init
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MY_FLASH_SetSectorAddrs
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MY_FLASH_ReadN
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonAceptPressed
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_UpdateScreen
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Puts
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Init
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_GotoXY
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Clear
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PositionServoSensor
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PositionServoRamp
-<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MY_FLASH_SetSectorAddrs
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MY_FLASH_ReadN
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;resetvar
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_cts34725
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitESP
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Init
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonMenuPressed
-<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonAceptPressed
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
@@ -1409,8 +1418,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Transmit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_UpdateScreen
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Init
+<BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_Init
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSD1306_UpdateScreen
 </UL>
 
 <P><STRONG><a name="[e0]"></a>ssd1306_I2C_WriteMulti</STRONG> (Thumb, 50 bytes, Stack size 280 bytes, ssd1306.o(i.ssd1306_I2C_WriteMulti))
@@ -1493,11 +1502,11 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Transmit
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_IsDeviceReady
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_IsDeviceReady
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Transmit
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Receive
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterRequestWrite
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterRequestRead
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Receive
 </UL>
 
 <P><STRONG><a name="[cd]"></a>I2C_WaitOnMasterAddressFlagUntilTimeout</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, stm32f4xx_hal_i2c.o(i.I2C_WaitOnMasterAddressFlagUntilTimeout))

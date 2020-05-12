@@ -43,4 +43,5 @@ rgbsensorproyect\tcs34725.o: ..\MyLibraries\test.h
 rgbsensorproyect\tcs34725.o: ..\..\Libraries_stm32f4\servosandbuttons.h
 rgbsensorproyect\tcs34725.o: ..\..\Libraries_stm32f4\sendwifi.h
 rgbsensorproyect\tcs34725.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+rgbsensorproyect\tcs34725.o: ..\..\Libraries_stm32f4\servosandbuttons.h
 rgbsensorproyect\tcs34725.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
